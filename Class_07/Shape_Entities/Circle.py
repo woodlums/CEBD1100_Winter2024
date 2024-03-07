@@ -7,6 +7,10 @@ class Circle(Shape):
         super().__init__(c)
         #self.colour = c
 
+    def __str__(self):
+        return (f"I am a {type(self)}, my colour is {self.colour},"
+                f" my area is {self.get_area()} and my perimeter is {self.get_perimeter()}")
+
     def get_area(self):
         return (pi * self.radius) ** 2
 
