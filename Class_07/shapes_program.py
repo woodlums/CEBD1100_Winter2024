@@ -3,22 +3,24 @@ from functools import reduce
 from Shape_Entities.Circle import Circle
 from Shape_Entities.Square import Square
 from Shape_Entities.Rectangle import Rectangle
+from Shape_Entities.Triangle import Triangle
 from Shape_Entities.Shape import Shape
 
 c1 = Circle(15, "Blue")
 c2 = Circle(20, "Yellow")
 s1 = Square(12, "White")
 r1 = Rectangle(30, 40, "Pink")
-x1 = Shape("Red")
+t1 = Triangle(25, "Blue")
+# x1 = Shape("Red")
 
 print(c1)
-exit(1)
 
 colour_list = []
 colour_list.append(c1)
 colour_list.append(c2)
 colour_list.append(s1)
 colour_list.append(r1)
+colour_list.append(t1)
 # colour_list.append(x1)
 
 area = 0
