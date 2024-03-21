@@ -25,6 +25,12 @@ class SavingsAccount(Account):
             self.active = True
         super().deposit(amount)
 
+    def withdraw(self, amount):
+        # Check if the amount would result in < 0
+        if self.current_balance - amount <= 0:
+            print("You have overdrawn, account is now inactive.")
+            self.active = False
+
     def check_overdraw(self):
         pass
 
